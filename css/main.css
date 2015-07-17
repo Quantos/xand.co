@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'geogtq-md-webfont';
+  src: url('../fonts/geogtq-md-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/geogtq-md-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/geogtq-md-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/geogtq-md-webfont.svg#geogtq-md-webfont') format('svg'); /* Legacy iOS */
+}
+
+p {
+  font-family: geogtq-md-webfont;
+  color: white;
+}
+
+body {
+  background: rgb(215,129,138);
+  text-align: center;
+}
+
+.interest{
+  position: relative;
+  top: -5em;
+  font-size: 1.5em;
+}
+
+.intro{
+  position: relative;
+  top: -8rem;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.logo {
+  max-width: 20%;
+}
+
+.copy{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 5em;
+  max-width: 60%;
+}
+
+.background {
+  width: 100%;
+}
+
+/*/////////////////////////
+
+FORM
+
+/////////////////////////*/
+
+*:focus {
+    outline: none;
+}
+
+input.emailtext {
+  font-size: 1.3em;
+  font-family: geogtq-md-webfont;
+  max-width: 80%;
+}
+
+input {
+    background-color: transparent;
+    border: 0px solid;
+    width: 300px;
+    color: #fff;
+    line-height: 1.8em;
+}
+
+.arrow {
+  font-size: 1.1em;
+  width: 25px;
+}
+
+hr { /*UNDERLINE*/
+    height: 1px;
+    border: 0;
+    width: 100%;
+    padding: 0;
+    background: #fff;
+}
+
+.thanks{
+  display:none;
+  top: -10em;
+  position: relative;
+}
+
+
+.form1 {
+  display: inline-block;
+  position: relative;
+  top: -9em;
+}
+
+/*BROWSER SPECIFIC*/
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #ef828c inset;
+    -webkit-text-fill-color: #fff;
+}
+
+::-webkit-input-placeholder {
+  color:    #f7bec3;
+  font-family: geogtq-md-webfont;
+}
+
+::-moz-placeholder {
+  color:    #f7bec3;
+  font-family: geogtq-md-webfont;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXX
+
+END FORM
+
+XXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+@media (min-width: 700px){
+
+   .main-content{
+      position: relative;
+      top: 2em;
+      max-width: 60%;
+      margin:auto;
+    }
+
+   .logo{
+     min-width: 6%;
+     max-width: 10%;
+     position: absolute;
+     left: 3em;
+     top: 2em;
+   }
+
+   .interest{
+     top: -3em;
+   }
+
+   .thanks {
+     top: -5em;
+   }
+
+   .form1 {
+     top: -5em;
+   }
+
+   .intro{
+     top:-9rem;
+     font-size: 1.5em;
+   }
+   .copy{
+     top: 8em;
+   }
+
+}
+
+@media (min-width:1024px) {
+
+  .main-content{
+    max-width: 50%;
+  }
+
+  .copy{
+    max-width: 70%;
+  }
+
+  .intro{
+    max-width: 100%;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+  }
+
+}
+
+  @media (min-width:1400px) {
+
+    .main-content{
+      max-width: 35%;
+    }
+
+    .copy{
+      max-width: 80%;
+    }
+ }
